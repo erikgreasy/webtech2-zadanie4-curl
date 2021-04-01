@@ -1,0 +1,15 @@
+{
+  "name": "zadanie4",
+  "version": "1.0.0",
+  "description": "1. create config.php in root dir\r 2. add PHP constants into **config.php** with define for following data\r    1. ROUTING\r       1. BASE_URL - eg https://wt104.fei.stuba.sk/zadanie3\r       2. ROUTING_PREFIX - zadanie3\r    2. GOOGLE OAUTH\r       1. CLIENT_ID\r       2. CLIENT_SECRET\r       3. REDIRECT_URI\r    3. DATABASE\r       1. DB_HOST\r       2. DB_NAME\r       3. DB_USER\r       4. DB_PASS\r 3. clone this repo\r 4. run composer install\r 5. run npm install\r 6. ENJOY!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0"
+  }
+}
