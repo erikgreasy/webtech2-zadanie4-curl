@@ -6,7 +6,7 @@
  */
 function view( $template_file, $var_arr = [] ) {
     extract($var_arr);
-    include_once 'views/' . $template_file;
+    include_once 'views/' . $template_file . '.view.php';
     exit;
 }
 
