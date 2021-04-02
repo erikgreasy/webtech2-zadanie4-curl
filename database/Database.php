@@ -1,6 +1,6 @@
 <?php
 
-namespace inc;
+namespace database;
 
 class Database {
     private $host = DB_HOST;
