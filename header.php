@@ -12,6 +12,10 @@
 
     <!-- STYLES -->
     <link rel="stylesheet" href="<?= BASE_URL ?>/assets/public/css/app.css">
+
+    <script>
+        const BASE_URL = '<?= BASE_URL ?>'
+    </script>
 </head>
 <body>
 

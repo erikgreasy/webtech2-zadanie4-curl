@@ -16,7 +16,8 @@ $(document).ready(function() {
 
         var student_id = $(this).find('input[name=student_id]').val();
         var lecture_id = $(this).find('input[name=lecture_id]').val();
-        var url = 'http://localhost/webtech/zadanie4' + `/student/${student_id}/lecture/${lecture_id}`;
+        var url = BASE_URL + `/student/${student_id}/lecture/${lecture_id}`;
+
         $.ajax({
             type: "GET",
             url: url,
