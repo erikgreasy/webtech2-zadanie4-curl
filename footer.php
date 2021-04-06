@@ -4,5 +4,6 @@
 </footer>
 
 <script src="<?= BASE_URL ?>/assets/public/js/app.js"></script>
+
 </body>
 </html>

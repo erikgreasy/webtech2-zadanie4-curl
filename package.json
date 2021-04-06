@@ -13,8 +13,11 @@
   "dependencies": {
     "bootstrap": "^4.6.0",
     "chart.js": "^3.0.2",
+    "datatables.net": "^1.10.24",
+    "datatables.net-dt": "^1.10.24",
     "jquery": "^3.6.0",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "sorttable": "^1.0.2"
   },
   "devDependencies": {
     "file-loader": "^6.2.0",

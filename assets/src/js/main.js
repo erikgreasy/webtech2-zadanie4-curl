@@ -3,6 +3,11 @@ import $ from 'jquery';
 import 'bootstrap';
 
 $(document).ready(function() {
+
+    $('.submit-form-span').on('click', function(e) {
+        $(this).parent().find('.lectureStudentDetail').submit();
+    })
+
     $('.lectureStudentDetail').on('submit', function(e) {
         e.preventDefault();
 
@@ -88,4 +93,6 @@ $(document).ready(function() {
             }
         });
     }
+
+
 })

@@ -8,6 +8,23 @@ use app\models\File;
 
 class FileRepository extends Repository {
 
+    public function get( $id ) {
+        $sql = "SELECT * FROM file WHERE id = :id";
+        $stmt = $this->conn->prepare( $sql );
+        $stmt->setFetchMode( \PDO::FETCH_CLASS, File::class );
+        $stmt->execute([
+            'id'    => $id
+        ]);
+
+        $file = $stmt->fetch();
+
+        if( $file ) {
+            return $file;
+        }
+
+        return false;
+    }
+
     public function getAll() {
         $sql = "SELECT * FROM file";
         $stmt = $this->conn->query( $sql );
@@ -24,8 +41,12 @@ class FileRepository extends Repository {
         $stmt->execute([
             'name'  => $file->getName(),
         ]);
+        if( $stmt ) {
+            $insertedFile = $this->get( $this->conn->lastInsertId() );
+            return $insertedFile;
+        }
 
-        return true;
+        return false;
     }
 
 }

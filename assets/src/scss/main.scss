@@ -2,3 +2,34 @@
 main {
     padding: 100px 0;
 }
+
+.table {
+
+    th {
+        &:not(.sorttable_nosort):hover {
+            cursor: pointer;
+        }
+        button {
+            background: none;
+            border: none;
+            outline: none;
+            font-weight: 700;
+        }
+    }
+
+    .submit-form-span {
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+    // button {
+    //     background: none;
+    //     outline: none;
+    //     border: none;
+
+    //     &:hover {
+    //         text-decoration: underline;
+    //     }
+    // }
+}

@@ -12,7 +12,6 @@
 
     <!-- STYLES -->
     <link rel="stylesheet" href="<?= BASE_URL ?>/assets/public/css/app.css">
-
 </head>
 <body>
 
